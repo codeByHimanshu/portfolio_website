@@ -1,0 +1,470 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background:#262626;
+    color: white;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(images/himanshu.jpg); */
+    background-size: cover;
+    background-position: center;
+    background-attachment: inherit;
+    clip-path: polygon(50% 0%, 100% 0, 100% 97%, 69% 89%, 35% 98%, 0 92%, 0 0);
+    
+
+}
+
+.container {
+    padding: 10px 5%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+}
+
+#logo {
+    color: grey;
+    font-size: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li a::after {
+    content: " ";
+    width: 0;
+    height: 3px;
+    background: #00ff40;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    width: 100%;
+}
+
+.text {
+    margin-top: 15%;
+    margin-left: 10%;
+}
+
+.text h1 {
+    font-size: 60px;
+
+}
+
+.text span {
+    color: red;
+    font-weight: bolder;
+}
+
+#About {
+    padding: 80px -100px;
+    /* margin-top: -40px; */
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col1 {
+    flex-basis: 35%;
+}
+
+.col1 img {
+    width: 100%;
+    border-radius: 10%;
+    height: 80%;
+}
+
+.col2 {
+    flex-basis: 60%;
+}
+
+.about-text {
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.title {
+    display: flex;
+    margin: 20px 0 60px;
+}
+.links {
+    margin-top: 20px;
+    margin-right: 60px;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+}
+
+.title p:hover {
+    font-size: larger;
+    color: #ff0400;
+}
+
+.content span {
+    color: grey;
+    font-size: 14px;
+
+}
+
+.content ul li {
+    color: white;
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.content {
+    display: none;
+}
+
+.content.active-content {
+    display: block;
+}
+
+
+
+
+
+#services {
+    /* padding: 30px 0; */
+    margin-top: -80px;
+
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.service-list div {
+    background: rgb(32, 22, 22);
+    padding: 50px;
+    font-size: 14px;
+    font-weight: 300;
+    border-right: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    transition: background 0.5s, transform 0.5s;
+    border-radius: 10px;
+    border-radius: 20%;
+}
+
+.service-list i {
+    font-size: 50px;
+    margin-bottom: 28px;
+}
+
+.service-list h2 {
+    margin-bottom: 10px;
+}
+
+.service-list div a {
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.service-list div:hover {
+    /* background: hsl(28, 100%, 50%); */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #00ff40);
+    transform: translate(-10px);
+
+}
+
+
+/* project work */
+
+.details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 20%;
+
+    display: block;
+    height: 350px;
+    transition: transform 0.5s;
+}
+
+.description {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #00ff40);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    text-align: center;
+    transition: height 0.5s;
+}
+
+.description h3 {
+
+    margin-top: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.description a {
+    color: hsl(0, 87%, 3%);
+    font-size: 25px;
+
+}
+
+.work:hover img {
+    transform: scale(1.5);
+}
+
+.work:hover .description {
+    height: 100%;
+}
+
+
+
+
+.row {
+    display: flex;
+}
+
+.left {
+    flex-basis: 35%;
+}
+
+.right {
+    flex-basis: 60%;
+}
+
+.left h1 {
+    margin: 10px;
+}
+
+.left p {
+    margin: 30px;
+}
+
+.social a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-size: 33px;
+    transition: transform 0.5s;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+html{
+    scroll-behavior: ;
+}
+
+.social a:hover {
+   font-size: x-large;
+    transform: translate(-5px);
+    transform: scale(1.5);
+}
+
+.btn {
+    text-decoration: none;
+    background: #100c0c;
+    color: white;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px;
+    margin-left: 20px;
+
+}
+
+.btn:hover {
+    background: red;
+    color: #000;
+}
+
+
+form input,
+textarea {
+    border-radius: 2px;
+    background: #000;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    margin: 15px;
+}
+
+form textarea {
+    height: 120px;
+}
+
+.right button {
+    color: white;
+    background: #000;
+    padding: 10px;
+    margin-left: 50%;
+    width: 120px;
+   
+
+}
+.right button:hover{
+    background: red;
+    color: black;
+}
+.footer {
+    width: 100%;
+    text-align: center;
+    background: #262626;
+    padding: 15px;
+}
+nav .fas{
+    display: none;
+}
+
+/* responsiveness */
+
+@media only screen and (max-width:600px){
+    body{
+        background: #000;
+    }
+
+    #header{
+        background: url(images/elon\ musk.jpg);
+        background-size: cover;
+    background-position: center;
+    height: 500px;
+    }
+    #logo {
+      
+        font-size: 30px;
+    }
+    .text h1{
+        font-size: 40px;
+    }
+    .text{
+    margin-top: 200px;
+        text-align: center;
+        align-items: center;
+    }
+    nav .fas{
+        display:block;
+        font-size: 25px;
+        margin-right: 20px;
+    }
+    nav ul{
+        background: #362929;
+        position: fixed;
+        top: 0;
+        right: 0;
+        right: -150px;
+        width: 150px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+        
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .about-text{
+       
+        font-size: 30px;
+    }
+    .col1{
+        margin-top: -55px;
+        border-radius: 20px;
+    }
+    .col1,.col2{
+        flex-basis: 95%;
+        margin-left: 2%;
+       
+    }
+    .col2 p{
+        text-align: center;
+    }
+    .content{
+        margin-top: -40px;
+        text-align: center;
+    }
+    .tittle{
+        margin: auto;
+        padding:10px;
+    }
+    #services{
+        margin-top: 20px;
+    }
+    #project-work{
+        margin-top: 20px;
+    }
+    .left,.right{
+        flex-basis: 100%;
+    }
+    .right input,textarea{
+        margin:10px;
+        background: #262626;
+    }
+
+    .right{
+        margin-top: 20px;
+        width: 100%;
+        height: 550px;;
+    }
+    .footer{
+   color: white;
+ overflow: hidden;
+    }
+    .row img{
+        margin-top: 35px;
+    }
+}

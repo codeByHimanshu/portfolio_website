@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>himanshu's porfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/595b8d3a3f.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="conatiner">
+            <nav>
+                <h1 id="logo"><span style="color:red;">P</span>ortfolio..</h1>
+                <ul id="menubar">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#project-work">Projects </a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closebar()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openbar()"></i>
+            </nav>
+            <div class=" text">
+                <p>Java Fullstack Developer</p>
+                <h1>Hi, I'm <span>Himanshu</span><br>
+                    from Lucknow,India </h1>
+            </div>
+        </div>
+    </div>
+    <div id="About">
+        <div class="row">
+            <div class="col1">
+                <img src="images/himanshu.jpg" alt="">
+            </div>
+            <div class="col2">
+                <h1 class="about-text">About Me</h1>
+                <br>
+                <p style="font-family: 'Times New Roman', Times, serif; font-style: italic;">As a recent graduate with a
+                    Bachelor of Technology in Computer Science, I am a skilled Java Fullstack
+                    Developer proficient in developing and maintaining web applications. My academic background and
+                    hands-on project experience have equipped me with a strong foundation in both front-end and back-end
+                    technologies. I am passionate about leveraging my technical skills to solve complex problems and
+                    contribute to innovative software solutions.</p>
+                <br>
+                <div class="title">
+                    <p class="links"  onclick=switchSection( "skills" )>Skills</p>
+                    <p class="links"  onclick=switchSection("education")>Education</p>
+                    <p class=" links"  onclick=switchSection("experience")>Experience</p>
+                </div>
+
+                <div class="content active-content" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing user interfaces for websites</li><br>
+                        <li><span>Java Developer</span><br>Devoloping java based Web Application</li><br>
+                        <li><span>SQL Server</span><br>wriiting effiecient SQL queris</li><br>
+
+                    </ul>
+                </div>
+                <div class="content" id="education">
+                    <ul>
+                        <li><span>High School</span><br>(2016-2017)<br> department science</li><br>
+                        <li><span>Intermediate</span><br>(2018-2019)<br> department science</li><br>
+                        <li><span>B.tech</span><br>(2019-2024)<br> computer science and engineering</li><br>
+
+
+                    </ul>
+                </div>
+                <div class="content" id="experience">
+                    <ul>
+                        <li><span>2020-current</span><br>Designing user interfaces for websites</li><br>
+                        <li><span>2023-cuurent</span><br>working java based Web Application</li><br>
+                        <li><span>2023-current</span><br>wriiting effiecient SQL queris</li><br>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- services -->
+
+
+    <div id="services">
+        <div class="container">
+            <h1 class="about-text">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>We Development</h2>
+                    <p>Skilled in crafting engaging and intuitive user interfaces (UI) using modern front-end technologies. My focus is on delivering visually appealing designs that provide a smooth and interactive user experience (UX).</p>
+                    <a href="">explore...</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-bug-slash"></i>
+                    <h2>Web maintinence</h2>
+                    <p>With a strong foundation in web development, I specialize in maintaining and enhancing web applications, designing user-friendly interfaces, and implementing robust backend solutions using Java. My expertise spans across ensuring the smooth operation of websites, creating engaging and intuitive user experiences, and developing scalable backend systems</p>
+                    <a href="">explore...</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database Manaegment</h2>
+                    <p>SQL is a fundamental skill for managing and querying relational databases. I have extensive experience in using SQL to design, implement, and optimize databases, ensuring data integrity, and extracting valuable insights from complex datasets.</p>
+                    <a href="">explore...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- work deatails  -->
+
+    <div id="project-work">
+        <div class="container">
+            <h1 class="about-text">Project Work</h1>
+            <div class="details">
+                <div class="work">
+                    <img src="images/first.jpg" alt="">
+                    <div class="description">
+                        <h3> Web Application For online Examination </h3>
+                        <p>Developed an online examination website using Java Servlets and JSP (JavaServer Pages) to provide a robust and user-friendly platform for conducting and managing online exams. The system is designed to handle various types of assessments.</p>
+                        <a href=""><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/second.jpg" alt="">
+                    <div class="description">
+                        <h3>React js Projects</h3>
+                        <p>My experience with React.js includes developing modern, responsive web applications with a focus on performance, scalability, and user experience. Below are some examples of projects I've worked on using React.js, showcasing my skills and expertise in creating high-quality web applications.</p>
+                        <a href="https://github.com/codeByHimanshu/React-Js-Projects.git"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/third.jpg" alt="">
+                    <div class="description">
+                        <h3>Vehicle Renting System</h3>
+                        <p>Developed a comprehensive vehicle renting system designed to streamline the process of renting vehicles, manage inventory, and handle transactions efficiently. The system provides a user-friendly platform for customers to browse, book, and manage their vehicle rentals, while offering administrative features for managing the fleet and processing transactions.</p>
+                        <a href="https://github.com/codeByHimanshu/Vehicle-Renting-System.git"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact-form -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="left">
+                    <h1 class="about-text">Contact Me</h1>
+                    <p> &nbsp;<i class="fas fa-paper-plane"></i> hsaktu261@gmail.com</p>
+                    <p> &nbsp;<i class="fas fa-phone-square-alt"></i> +91-6306512288</p>
+                    <div class="social">
+                        <a href="https://github.com/codeByHimanshu"><i class="fab fa-github"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a
+                            href="https://www.linkedin.com/in/himanshu-singh-43aa26230?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/himanshu_singh_resume.pdf" class="btn" download>Dwonload CV</a>
+                </div>
+                <div class="right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="enter Your Name">
+                        <input type="email" name="Email" placeholder="enter Your Email">
+                        <textarea name="Description"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                    <span></span>
+                </div>
+
+                <div class="footer">
+                    <p>copyright @ Himanshu. All righs reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var menubar = document.getElementById("menubar");
+        function openbar() {
+            menubar.style.right = "0"
+        }
+        function closebar() {
+            menubar.style.right = "-200px"
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyDDA3ECl65uo-wAU09paikvAiVPG81erXhrr6YNunU21svkqenEcbXmKblnKguxCrcuQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+<script>
+    function switchSection(sectionId) {
+        var sections = document.querySelectorAll('.content');
+        sections.forEach(function(section) {
+            section.classList.remove('active-content');
+        });
+        
+        var activeSection = document.getElementById(sectionId);
+        if (activeSection) {
+            activeSection.classList.add('active-content');
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        switchSection('skills');
+    });
+</script>
+</body>
+
+</html>
