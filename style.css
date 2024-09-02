@@ -464,6 +464,7 @@ nav .fas{
          background: black;
    color: white;
  overflow: hidden;
+        margin-top:-100px;
     }
     .row img{
         margin-top: 35px;
