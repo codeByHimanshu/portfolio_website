@@ -6,8 +6,8 @@
 }
 
 body {
-    background:#262626;
-    color: white;
+   background: white;
+   color: #000;
 }
 
 #header {
@@ -18,10 +18,8 @@ body {
     background-position: center;
     background-attachment: inherit;
     clip-path: polygon(50% 0%, 100% 0, 100% 97%, 69% 89%, 35% 98%, 0 92%, 0 0);
-    
-
+    background:royalblue;
 }
-
 .container {
     padding: 10px 5%;
 }
@@ -30,8 +28,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-  
+    flex-wrap: wrap; 
 }
 
 #logo {
@@ -46,7 +43,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color:black;
     text-decoration: none;
     font-size: 20px;
 }
@@ -98,9 +95,10 @@ nav ul li a:hover {
 }
 
 .col1 img {
-    width: 100%;
-    border-radius: 10%;
-    height: 80%;
+    height: 350px;
+    width: 350px;
+   margin-left: 30px;
+   border-radius: 10px;
 }
 
 .col2 {
@@ -136,7 +134,7 @@ nav ul li a:hover {
 }
 
 .content ul li {
-    color: white;
+    color: black;
     list-style: none;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
@@ -165,18 +163,27 @@ nav ul li a:hover {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
     margin-top: 40px;
+   
 }
 
-.service-list div {
-    background: rgb(32, 22, 22);
-    padding: 50px;
+.deco {
+    background: white;
+    color: white;
+    padding: 10px;
     font-size: 14px;
     font-weight: 300;
     border-right: 10px;
     font-family: 'Times New Roman', Times, serif;
     transition: background 0.5s, transform 0.5s;
     border-radius: 10px;
-    border-radius: 20%;
+    height: 320px;
+    border-left: 2px solid red;
+    border-top: 2px solid red;
+    
+}
+.deco2{
+   background: rgb(10, 2, 43);
+   padding: 10px;
 }
 
 .service-list i {
@@ -217,15 +224,18 @@ nav ul li a:hover {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    border-left: 2px solid red;
+    border-bottom: 2px solid red;
 }
 
 .work img {
     width: 100%;
-    border-radius: 20%;
-
+    border-radius:10px;
     display: block;
-    height: 350px;
+    height: 340px;
     transition: transform 0.5s;
+    margin-bottom: 5px;
+    margin-left: 5px;
 }
 
 .description {
@@ -244,6 +254,9 @@ nav ul li a:hover {
     padding: 0 20px;
     text-align: center;
     transition: height 0.5s;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    color: white;
 }
 
 .description h3 {
@@ -273,6 +286,7 @@ nav ul li a:hover {
 
 .row {
     display: flex;
+    color: #000;
 }
 
 .left {
@@ -285,6 +299,7 @@ nav ul li a:hover {
 
 .left h1 {
     margin: 10px;
+    color: #000;
 }
 
 .left p {
@@ -301,7 +316,7 @@ nav ul li a:hover {
     margin-bottom: 30px;
 }
 html{
-    scroll-behavior: ;
+    scroll-behavior: smooth;
 }
 
 .social a:hover {
@@ -357,7 +372,7 @@ form textarea {
 .footer {
     width: 100%;
     text-align: center;
-    background: #262626;
+   
     padding: 15px;
 }
 nav .fas{
@@ -367,9 +382,7 @@ nav .fas{
 /* responsiveness */
 
 @media only screen and (max-width:600px){
-    body{
-        background: #000;
-    }
+   
 
     #header{
         background: url(images/elon\ musk.jpg);
@@ -395,7 +408,7 @@ nav .fas{
         margin-right: 20px;
     }
     nav ul{
-        background: #362929;
+        
         position: fixed;
         top: 0;
         right: 0;
@@ -452,21 +465,21 @@ nav .fas{
     }
     .right input,textarea{
         margin:10px;
-        background: #262626;
+        
     }
 
     .right{
         margin-top: 20px;
         width: 100%;
-        height: 550px;;
+        height: 500px;;
     }
     .footer{
-        background: #000;
-        color: white;
+       
+        color:black;
         overflow: hidden;
         margin-top:-100px;
     }
     .row img{
-        margin-top: 35px;
+        margin-top: 10px;
     }
 }
